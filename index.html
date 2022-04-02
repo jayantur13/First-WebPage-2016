@@ -1,0 +1,231 @@
+<!DOCTYPE>
+<html>
+<head>
+<title>First webpage</title>
+<style type="text/css">
+*
+{
+ margin:0;
+ padding:0;
+}
+#header
+{
+width:100%;
+height:60px;
+background-color:#000000;
+position:fixed;
+top:0;
+right:0;
+left:0;
+z-index:1;
+}
+body
+{
+ margin-top:60px;
+}
+#headerinner
+{
+ padding:10px;
+ width:960px;
+ height:60px;
+ margin:0 auto;
+}
+/*postion: fixed,relative,absolute,static,,deafault>static of no use,,top|bottom|left|right with other 3*/
+
+.companyname     
+{
+ color:#f2f2f2;
+ position:relative;
+ font-size:20px;
+ top:20px;
+ float:left;
+}
+.companyname:hover
+{
+ color:white;
+ cursor:pointer;
+}
+#menu
+{
+width:350px;
+height:60px;
+float:right;
+position:relative;
+top:10px;
+}
+#menu ul li
+{
+ list-style-type:none;
+}
+#menu ul li a
+{
+ text-decoration:none;
+ color:#f2f2f2;
+}
+#menu ul li
+{
+float:left;
+margin:10px;
+}
+
+#menu ul li a:hover
+{
+ border-bottom:2px solid #ffffff;
+}
+#menu ul li a:hover
+{
+ color:#ffffff;
+}
+#mainheader
+{
+ position:relative;
+ top:10px;
+ width:1360px;
+ height:400px
+}
+#mainheaderinner
+{
+ position:relative;
+ left:188px;
+ padding:10px;
+}
+#mainheaderinner h2
+{
+ font-size:70px;
+}
+#mainheaderinner h4
+{
+ padding:10px;
+ text-align:justify;
+ font-size:24px;
+}
+#mainheaderinner a
+{
+ color:#ffffff;
+ background-color:337ab7;
+ text-decoration:none;
+ font-size:18px;
+ border-radius:6px;
+ padding:10px 16px;
+ position:relative;
+ top:40px;
+}
+#mainheaderinner a:hover
+{
+ background-color:#336699;
+}
+#bodywrapper
+{
+ position:relative;
+ top:20px;
+ width:1360px;
+ height:350px;
+}
+#divleft
+{
+ position:relative;
+ right:5px;
+ float:left;
+ width:420px;
+ height:350px;
+ background-color:lightcyan;
+}
+#divmid
+{
+ float:left;
+ width:510px;
+ height:350px;
+ background-color:#f2f2f2;
+}
+#divright
+{
+ position:relative;
+ left:5px;
+ float:left;
+ width:421px;
+ height:350px;
+ background-color:lightcyan;
+}
+#bodywrapper a
+{
+ text-decoration:none;
+ color:#f2f2f2;
+}
+#footer
+{
+ width:1360px;
+ height:350px;
+ position:relative;
+ top:80px;
+ background-color:#f2f2f2;
+}
+#footer a
+{
+ text-decoration:none;
+ color:#336699;
+}
+</style>
+<body>
+<div id="header"> 
+  <div id="headerinner">
+  <p class="companyname">Dream Hosting Solutions Pvt. Ltd.</p>
+  <div id="menu">                           
+  <ul>
+  <li ><a href="#" style="background:#ffffff;color:pink;cursor:default;">Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Gallery</a></li>
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">Blog</a></li>
+  </ul>
+  </div>
+  </div>
+</div>
+<div id="mainheader" style="background-image:url(images/h2.jpg);border-radius:10px;">
+ <div id="mainheaderinner">   
+ <h2 style="color:white;text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px #336699;">Why Dream host ??</h2>
+ <h4 style="color:white;text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px #f2f2f2;">Simplicity, best in performance, 24/7 support, 99% uptime & more</h4>
+ <a href="#" target="_blank">Know More</a>
+ </div>
+</div>
+<div id="bodywrapper">
+  <div id="divleft" style="border-radius: 10px;border: 1px solid blue;">    
+  <h3 style="background-color:#336699;color:white;text-align:center;border-radius: 10px;border: 1px solid blue;">Dedicated Servers</h3>
+  <img src="images/dedi.jpg" style="width:420px;height:326px;">
+  <h3 style="background-color:#336699;color:white;text-align:center;border-radius: 10px;border: 1px solid blue;"><a href="#" target="_blank">Details</a></h3>
+  
+  </div>
+  <div id="divmid" style="border-radius: 10px;border: 1px solid blue;">   
+  <h3 style="background-color:#336699;color:white;text-align:center;border-radius: 10px;border: 1px solid blue;">Unmanaged Servers</h3>
+  <img src="images/unman.png" style="width:420px;height:326px;">
+  <h3 style="background-color:#336699;color:white;text-align:center;border-radius: 10px;border: 1px solid blue;"><a href="#" target="_blank">Details</a></h3>
+  
+  </div>
+  <div id="divright" style="border-radius: 10px;border: 1px solid blue;">     
+  <h3 style="background-color:#336699;color:white;text-align:center;border-radius: 10px;border: 1px solid blue;">Managed Servers</h3>
+  <img src="images/man.jpg" style="width:420px;height:326px;">
+  <h3 style="background-color:#336699;color:white;text-align:center;border-radius: 10px;border: 1px solid blue;"><a href="#" target="_blank">Details</a></h3>
+  
+  </div>
+</div>
+
+<div id="footer">
+  <h3 style="text-align:center;color:#336699;postion:relative;right:50px;">Copyright&copy; 2016 Dream Hosting Solutions Pvt. Ltd.</h3>
+  
+ <h3 style="padding:150px;text-align:center;color:#336699;float:left;postion:relative;left:20px;"><a href="#" target="_blank">About Us</a><br><br>
+  <a href="#" target="_blank">Contact us</a><br><br> 
+  <a href="#" target="_blank">Location</a><br><br>
+  <a href="#" target="_blank">Whats coming next ?</a></h3>
+  
+ 
+  <h3 style="padding:150px;text-align:center;color:#336699;float:right;position:relative;right:20px;"><a href="#" target="_blank">Our words via blog</a><br><br>
+  <a href="#" target="_blank">Forum Disccussions</a><br><br>
+  <a href="#" target="_blank">Privacy Policy</a><br><br>
+  <a href="#" target="_blank">Cookie Policy<a><br>
+  </h3>
+
+
+
+</div>
+
+</body>
+</html>
